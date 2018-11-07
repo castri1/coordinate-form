@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Form } from 'antd';
-import SuperInput from './SuperInput';
+import CoordinateInput from './CoordinateInput';
 
 class TripletSurvey extends Component {
   constructor(props) {
@@ -18,9 +18,9 @@ class TripletSurvey extends Component {
   render() {
     return (
       <Form>
-        <SuperInput label="Point 1" onData={this.onData} name="point1" />
-        <SuperInput label="Point 2" onData={this.onData} name="point2" />
-        <SuperInput label="Point 3" onData={this.onData} name="point3" />
+        <CoordinateInput label="Point 1" onData={this.onData} name="point1" />
+        <CoordinateInput label="Point 2" onData={this.onData} name="point2" />
+        <CoordinateInput label="Point 3" onData={this.onData} name="point3" />
       </Form>
     );
   }

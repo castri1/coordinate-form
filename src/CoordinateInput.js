@@ -6,7 +6,7 @@ const FormItem = Form.Item;
 
 //TPS0074,0.6990,-0.3233,1.6191,02.11.2018,20:38:48.0
 
-class SuperInput extends Component {
+class CoordinateInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -57,7 +57,7 @@ class SuperInput extends Component {
   }
 }
 
-SuperInput.propTypes = {
+CoordinateInput.propTypes = {
   label: PropTypes.string.isRequired,
   itemLayout: PropTypes.shape({
     labelCol: PropTypes.shape({
@@ -81,7 +81,7 @@ SuperInput.propTypes = {
   name: PropTypes.string.isRequired
 };
 
-SuperInput.defaultProps = {
+CoordinateInput.defaultProps = {
   itemLayout: {
     labelCol: {
       xs: { span: 24 },
@@ -94,4 +94,4 @@ SuperInput.defaultProps = {
   }
 };
 
-export default SuperInput;
+export default CoordinateInput;
